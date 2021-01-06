@@ -1,0 +1,17 @@
+{
+  "run": {
+    "1": "Inside Run",
+    "2": "Toss Run",
+    "3": "Stretch Run",
+  },
+  "pass": {
+    "1": "Daggers Pass",
+    "2": "Running Back Screen",
+    "3": "Hail Mary Pass",
+  },
+  "rpo": {
+    "1": "Quick Slant or Inside Run",
+    "2": "Fade or Toss",
+    "3": "Wide Reciver Screen or QB Keep",
+  }
+}
