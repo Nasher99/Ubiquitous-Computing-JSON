@@ -1,0 +1,344 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "visor coach",
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            },
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HelloWorldIntent",
+                    "slots": [],
+                    "samples": [
+                        "hello",
+                        "how are you",
+                        "say hi world",
+                        "say hi",
+                        "hi",
+                        "say hello world",
+                        "say hello"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "PlayCall",
+                    "slots": [
+                        {
+                            "name": "Direction",
+                            "type": "Direction"
+                        },
+                        {
+                            "name": "Type",
+                            "type": "Type"
+                        },
+                        {
+                            "name": "Number",
+                            "type": "PlayNumber"
+                        }
+                    ],
+                    "samples": [
+                        "Show {Direction} {Type} {Number}",
+                        "Show {Type}",
+                        "Show {Type} {Number}",
+                        "Broadcast {Type} {Number}",
+                        "Broadcast {Type}",
+                        "Broadcast {Direction} {Type} {Number}",
+                        "Broadcast {Direction} {Type}"
+                    ]
+                },
+                {
+                    "name": "Check",
+                    "slots": [
+                        {
+                            "name": "Receiver",
+                            "type": "Receiver"
+                        },
+                        {
+                            "name": "Protection",
+                            "type": "Protection"
+                        },
+                        {
+                            "name": "Route",
+                            "type": "Route"
+                        }
+                    ],
+                    "samples": [
+                        "Change Protection {Protection}",
+                        "Protection {Protection}",
+                        "Check Protection {Protection}",
+                        "Check {Protection}",
+                        "Change {Route} {Receiver}",
+                        "Change {Receiver} {Route}",
+                        "Check {Route} {Receiver}",
+                        "Check {Receiver} {Route}"
+                    ]
+                },
+                {
+                    "name": "Replay",
+                    "slots": [
+                        {
+                            "name": "CheckReplay",
+                            "type": "CheckReplay"
+                        }
+                    ],
+                    "samples": [
+                        "Last Play with check {CheckReplay}",
+                        "Replay with check {CheckReplay}",
+                        "Show last play with check {CheckReplay}",
+                        "Replay last play",
+                        "Show last play",
+                        "Replay",
+                        "What was the last play"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Direction",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Left"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Right"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Type",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "RPO",
+                                "synonyms": [
+                                    "option"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pass",
+                                "synonyms": [
+                                    "throw"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Run"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Receiver",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "D",
+                                "synonyms": [
+                                    "Damson",
+                                    "Date"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "C",
+                                "synonyms": [
+                                    "Cucumber",
+                                    "Cherry",
+                                    "Carrot"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B",
+                                "synonyms": [
+                                    "Berry",
+                                    "Banana"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "A",
+                                "synonyms": [
+                                    "Avocado",
+                                    "Apricot",
+                                    "Apple"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "PlayNumber",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "3"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "2"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Protection",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Max"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "right"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Left"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Route",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Go",
+                                "synonyms": [
+                                    "9"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Post",
+                                "synonyms": [
+                                    "8"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Corner",
+                                "synonyms": [
+                                    "7"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Drag",
+                                "synonyms": [
+                                    "6"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Out",
+                                "synonyms": [
+                                    "5"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Curl",
+                                "synonyms": [
+                                    "4"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Comeback",
+                                "synonyms": [
+                                    "3"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Slant",
+                                "synonyms": [
+                                    "2"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Quick Out",
+                                "synonyms": [
+                                    "1"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Stop",
+                                "synonyms": [
+                                    "0"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "CheckReplay",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "yes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "no"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
